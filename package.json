@@ -1,0 +1,35 @@
+{
+    "name": "serverless-js-config-example",
+    "version": "1.0.0",
+    "description":
+        "Couple examples of how new serverless.js config can be used",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy:base-config":
+            "cd ./base-config && ../node_modules/.bin/serverless deploy",
+        "deploy:composition":
+            "cd ./composition && ../node_modules/.bin/serverless deploy",
+        "deploy:props-and-env":
+            "cd ./props-and-env && ../node_modules/.bin/serverless deploy --bucket=my-test-bucket"
+    },
+    "repository": {
+        "type": "git",
+        "url":
+            "git+https://github.com/pavelvlasov/serverless-js-config-example.git"
+    },
+    "keywords": ["serverless", "aws", "lambda", "js"],
+    "dependencies": {
+        "commander": "^2.12.2",
+        "lodash": "^4.17.4",
+        "serverless": "8bites/serverless"
+    },
+    "author": "Pavel Vlasov <freakycue@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url":
+            "https://github.com/pavelvlasov/serverless-js-config-example/issues"
+    },
+    "homepage":
+        "https://github.com/pavelvlasov/serverless-js-config-example#readme"
+}
